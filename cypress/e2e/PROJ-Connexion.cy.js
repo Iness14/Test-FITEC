@@ -17,6 +17,7 @@ describe("Tests de connexion avec un compte existant", () => {
             cy.get('.woocommerce-LostPassword > a').click()
             cy.get('#user_login').type('Trabelsi Ines')
             cy.get('.woocommerce-Button').click()
+            cy.log('hello')
         })
     //03 - cas de test : connexion avec un compte existant via le bouton "Mon compte".
     it("Connexion avec un compte existant à partir du bouton Mon compte",() => {
